@@ -5,6 +5,7 @@ type AppContextProps = {
   userId?: number;
   userName?: string;
   userJWT?: string;
+  currentPage?: string,
   darkMode?: boolean;
 };
 
@@ -12,6 +13,7 @@ const defaultAppContext: AppContextProps = {
   userId: 333,
   userName: "John",
   userJWT: "- Default state -",
+  currentPage: "wishlists",
   darkMode: true,
 };
 
