@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "@/context";
+import AddButton from "../_components/addbutton";
 
 export default function Wishlists() {
   const { userDetails, setUserDetails } = useAppContext();
@@ -17,6 +18,7 @@ export default function Wishlists() {
         }}>
         Set JWT to Wishlists
       </button>
+      <AddButton />
     </main>
   );
 }
