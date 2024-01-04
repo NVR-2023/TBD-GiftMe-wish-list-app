@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import hamburgerIcon from "../../../public/hamburger_icon.png";
+import hamburgerIcon from "../../../../public/hamburger_icon.png";
 import Link from "next/link";
 import { useState } from "react";
 
