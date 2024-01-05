@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "@/context";
-import AddButton from "../_components/UI/addbutton";
+import AddButton from "../_components/Unique/addbutton";
 
 export default function Wishlists() {
   const { userDetails, setUserDetails } = useAppContext();
