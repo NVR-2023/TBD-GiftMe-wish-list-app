@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import HamburguerIcon from "./hamburguerIcon";
+import HamburgerIcon from "./hamburgerIcon";
 
 
 
@@ -22,7 +22,7 @@ export default function NavBar() {
                         type="button"
                         onClick={() => setNavbarOpen(!navbarOpen)}
                     >
-                        <HamburguerIcon />
+                        <HamburgerIcon />
                     </button>
                 </div>
                 <div
