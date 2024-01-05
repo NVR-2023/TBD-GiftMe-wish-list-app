@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
-import hamburgerIcon from "../../../../public/hamburger_icon.png";
 import Link from "next/link";
 import { useState } from "react";
+import HamburguerIcon from "./hamburguerIcon";
+
 
 
 export default function NavBar() {
@@ -18,11 +18,11 @@ export default function NavBar() {
                         Gift Me
                     </a>
                     <button
-                        className="cursor-pointer p-2 border border-solid border-transparent rounded bg-stone-100 block lg:hidden outline-none focus:outline-none"
+                        className="cursor-pointer px-2 rounded bg-stone-100 block lg:hidden"
                         type="button"
                         onClick={() => setNavbarOpen(!navbarOpen)}
                     >
-                        <Image src={hamburgerIcon} alt={"toggle menu"} className="w-6 h-6"></Image>
+                        <HamburguerIcon />
                     </button>
                 </div>
                 <div
@@ -30,7 +30,6 @@ export default function NavBar() {
                         "lg:flex flex-grow justify-center items-center" +
                         (navbarOpen ? " flex" : " hidden")
                     }
-                    id="example-navbar-danger"
                 >
                     <ul className="flex flex-col p-4 items-center md:p-2 mt-4 font-medium border border-gray-100 rounded-md bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
