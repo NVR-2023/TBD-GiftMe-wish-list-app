@@ -1,22 +1,21 @@
 "use client";
-
-import Link from "next/link";
-import { useAppContext } from "@/context";
+import NavBar from "../_components/navbar/navbar";
+import SideBar from "../_components/groups-sidebar/sidebar";
+import TabFiltering from "../_components/groups-tab-filtering/tab-filtering";
 
 export default function Groups() {
-  const { userDetails, setUserDetails } = useAppContext();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Groups tab successfully connected</div>
-      <div>{userDetails.userJWT}</div>
-      <Link href="/">Home</Link>
-      <button
-        onClick={() => {
-          // revision: argument needs to be typed
-          setUserDetails((currentUserDetails : any) => ({ ...currentUserDetails, userJWT: "Groups" }));
-        }}>
-        Set JWT to Groups
-      </button>
-    </main>
+    <div>
+      <NavBar />
+      <div className="pt-16 lg:flex">
+        <SideBar />
+        <div className="w-full h-full p-7 m-1 overflow-y-auto">
+          <TabFiltering />
+          <div className="flex items-center justify-center p-16 mr-5 border-4 border-dotted lg:p-80">
+            Content...
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
