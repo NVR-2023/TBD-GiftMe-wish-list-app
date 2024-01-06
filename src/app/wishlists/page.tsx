@@ -12,14 +12,14 @@ export default function Wishlists() {
         Navbar
       </div>
       <div className="flex flex-1">
-        <div className="w-1/5 h-full bg-gray-800 p-4 overflow-y-auto">
+        <div className="m-1 w-1/5 h-full bg-gray-800 p-4 overflow-y-auto">
         Sidebar
         </div>
         <div className="flex flex-col flex-1">
-          <div className="bg-gray-700 text-white p-4">
+          <div className="m-1 bg-gray-700 text-white p-4">
             Section Navbar
           </div>
-          <div className="flex-1 bg-green-700 p-4 overflow-y-auto">
+          <div className="m-1 flex-1 bg-green-700 p-4 overflow-y-auto">
             Content Area
           </div>
         </div>
