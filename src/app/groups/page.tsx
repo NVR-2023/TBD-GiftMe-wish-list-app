@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "../_components/navbar/navbar";
+import NavBar from "../_components/Layout/navbar/navbar";
 import SideBar from "../_components/groups-sidebar/sidebar";
 import TabFiltering from "../_components/groups-tab-filtering/tab-filtering";
 
