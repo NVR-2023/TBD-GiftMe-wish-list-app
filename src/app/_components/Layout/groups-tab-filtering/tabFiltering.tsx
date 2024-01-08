@@ -1,6 +1,6 @@
 import { useAppContext } from "@/context";
-import AddPeopleIcon from "./add-people-icon";
-import TrashIcon from "./delete-group";
+import AddPeopleIcon from "./addPeopleIcon";
+import TrashIcon from "./deleteGroupIcon";
 
 export default function TabFiltering() {
     const { userDetails } = useAppContext();

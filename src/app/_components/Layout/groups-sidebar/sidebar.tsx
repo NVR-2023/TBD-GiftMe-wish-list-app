@@ -1,6 +1,6 @@
 import { useAppContext } from "@/context";
-import AddGroupIcon from "./add-group-icon";
-import GroupWorkspaceIcon from "./group-workspace";
+import AddGroupIcon from "./addGroupIcon";
+import GroupWorkspaceIcon from "./groupWorkspaceIcon";
 
 export default function SideBar() {
     const { userDetails } = useAppContext();

@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "../_components/Layout/navbar/navbar";
-import SideBar from "../_components/groups-sidebar/sidebar";
-import TabFiltering from "../_components/groups-tab-filtering/tab-filtering";
+import SideBar from "../_components/Layout/groups-sidebar/sidebar";
+import TabFiltering from "../_components/Layout/groups-tab-filtering/tabFiltering";
 
 export default function Groups() {
   return (
