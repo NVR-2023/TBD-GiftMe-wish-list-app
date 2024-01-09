@@ -38,6 +38,38 @@ const defaultAppContext: AppContextProps = {
       type: 'Steven Lomack',
       members: 1
     },
+    {
+      type: 'Family & Friends',
+      members: 122
+    },
+    {
+      type: 'Coleagues',
+      members: 12
+    },
+    {
+      type: 'Close Family',
+      members: 5
+    },
+    {
+      type: 'Steven Lomack',
+      members: 1
+    },
+    {
+      type: 'Family & Friends',
+      members: 122
+    },
+    {
+      type: 'Coleagues',
+      members: 12
+    },
+    {
+      type: 'Close Family',
+      members: 5
+    },
+    {
+      type: 'Steven Lomack',
+      members: 1
+    },
   ],
 };
 
