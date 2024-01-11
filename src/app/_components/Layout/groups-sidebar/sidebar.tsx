@@ -7,8 +7,8 @@ export default function SideBar() {
   const groupsType = userDetails.groupsType;
 
   return (
-    <div className="flex flex-col w-full px-4 py-8 border-b lg:border-r lg:h-screen lg:w-64">
-      <div className="flex flex-col mt-6">
+    <div className="flex flex-col w-full px-4 pt-2 border-b lg:border-r lg:h-screen lg:w-64">
+      <div className="flex flex-col ">
         <div className="flex items-center justify-between border-b-2 border-slate-300 px-4 py-2 text-gray-700 bg-inherit">
           <span className="text-xl font-semibold">Groups</span>
           <AddGroupIcon />
