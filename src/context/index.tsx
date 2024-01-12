@@ -24,12 +24,12 @@ type gift = {
 
 type myWishlist = {
   name?: string;
-  giftArray?: gift[];
+  giftsArray?: gift[];
 }
 
 type externalWishlist = {
   name?: string;
-  giftArray?: gift[];
+  giftsArray?: gift[];
   receiver?: string;
 };
 
@@ -49,7 +49,7 @@ type gifter = {
 
 type group = {
   name?: string,
-  gifterArray?: gifter[];
+  giftersArray?: gifter[];
 }
 
 //Notifications
@@ -70,8 +70,8 @@ type AppContextProps = {
 
   //Wishlists tab
   sortWishlistsBy?: string;
-  myWIshListArray?: myWishlist[];
-  externalWishlistArray?: externalWishlist[];
+  myWIshListsArray?: myWishlist[];
+  externalWishlistsArray?: externalWishlist[];
   currentWishlistType?: "myWishlists" | "externalWishlists";
   currentWishlistIndex?: number;
 
