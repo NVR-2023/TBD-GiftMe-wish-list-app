@@ -15,7 +15,7 @@ const Wishlists: React.FC = () => {
     const getWishlistsData = () => {
       setUserDetails((currentUserDetails: any) => ({
         ...currentUserDetails,
-        myWIshListsArray: [
+        myWishListsArray: [
           {
             name: "My Birthday",
             giftsArray: [

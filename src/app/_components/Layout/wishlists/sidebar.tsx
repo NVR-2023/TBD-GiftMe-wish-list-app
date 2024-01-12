@@ -4,16 +4,16 @@ import React from "react";
 import { useAppContext } from "@/context";
 
 const SideBar: React.FC = () => {
-  const { userDetails , setUserDetails } = useAppContext();
+  const { userDetails, setUserDetails } = useAppContext();
   return (
-  <p>Sidebar connected</p>
+    <div>
+      <p>Sidebar connected</p>
+      <p>{userDetails.myWishListsArray[0].name}</p>
+    </div>
   );
 };
 
-
-
 export default SideBar;
-
 
 /*   <div>
     <p>{userDetails.myWIshListsArray[0].name}</p>
