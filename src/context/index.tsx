@@ -72,7 +72,7 @@ type AppContextProps = {
 
   //Wishlists tab
   sortWishlistsBy?: string;
-  myWishListsArray?: myWishlist[];
+  myWishlistsArray?: myWishlist[];
   externalWishlistsArray?: externalWishlist[];
   currentWishlistType?: "myWishlists" | "externalWishlists";
   currentWishlistIndex?: number;
