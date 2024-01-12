@@ -60,6 +60,8 @@ type notification = {
   sent?: Date;
 }
 
+
+
 type AppContextProps = {
   //General user details
   userId?: number;
