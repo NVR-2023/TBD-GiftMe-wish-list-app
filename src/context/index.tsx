@@ -83,6 +83,7 @@ type AppContextProps = {
   sortGroupsBy?: string;
   groupsArray?: group[];
   sortGiftersBy?: string
+  giftersArray?: gifter[];
   searchGroupBy?: string;
 
   //Notifications tab
