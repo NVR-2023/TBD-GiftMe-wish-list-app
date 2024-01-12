@@ -15,7 +15,7 @@ const Wishlists: React.FC = () => {
     const getWishlistsData = () => {
       setUserDetails((currentUserDetails: any) => ({
         ...currentUserDetails,
-        myWishListsArray: [
+        myWishlistsArray: [
           {
             name: "My Birthday",
             giftsArray: [
@@ -68,8 +68,6 @@ const Wishlists: React.FC = () => {
               },
             ],
           },
-
-
         ],
         externalWishlistsArray: [
           {
@@ -97,7 +95,7 @@ const Wishlists: React.FC = () => {
                 status: "reserved",
               },
             ],
-          receiver: "My brother",
+            receiver: "My brother",
           },
           {
             name: "Belinda's wedding",
@@ -124,7 +122,7 @@ const Wishlists: React.FC = () => {
                 status: "purchaseable",
               },
             ],
-          receiver: "Belinda",
+            receiver: "Belinda",
           },
         ],
       }));

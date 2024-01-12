@@ -8,7 +8,18 @@ const SideBar: React.FC = () => {
   return (
     <div>
       <p>Sidebar connected</p>
-      <p>{userDetails.myWishListsArray[0].name}</p>
+      <ul>
+        {userDetails.myWishlistsArray &&
+          userDetails.myWishlistsArray.map((wishlist: any, index: number) => (
+            <p key={index}>{wishlist.name}</p>
+          ))}
+      </ul>
+      <ul>
+        {userDetails.externalWishlistsArray &&
+          userDetails.externalWishlistsArray.map((wishlist: any, index: number) => (
+            <p key={index}>{wishlist.name}</p>
+          ))}
+      </ul>
     </div>
   );
 };
