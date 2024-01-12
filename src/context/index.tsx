@@ -55,7 +55,7 @@ type group = {
 //Notifications
 
 type notification = {
-  notificationContent?: string;
+  message?: string;
   isRead?: boolean;
   sent?: Date;
 }
