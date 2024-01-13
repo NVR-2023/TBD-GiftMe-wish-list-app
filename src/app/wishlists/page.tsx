@@ -18,9 +18,11 @@ const Wishlists: React.FC = () => {
         myWishlistsArray: [
           {
             name: "My Birthday",
+            id: 1,
             giftsArray: [
               {
                 name: "Fridge",
+                id: 1,
                 category: "appliances",
                 price: 500,
                 provider: "LG",
@@ -28,6 +30,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "Print",
+                id: 2,
                 category: "Home deco",
                 price: 100,
                 provider: "Giclée Prints",
@@ -35,6 +38,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "PS5",
+                id: 3,
                 category: "Entertainment",
                 price: 500,
                 provider: "Amazon",
@@ -44,9 +48,11 @@ const Wishlists: React.FC = () => {
           },
           {
             name: "My Graduation",
+            id: 2,
             giftsArray: [
               {
                 name: "Piano",
+                id: 1,
                 category: "musical instruments",
                 price: 3500,
                 provider: "Yamaha",
@@ -54,6 +60,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "Adidas trainers",
+                id: 2,
                 category: "sports",
                 price: 70,
                 provider: "Adidas",
@@ -61,6 +68,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "PS5",
+                id: 3,
                 category: "Entertainment",
                 price: 500,
                 provider: "Amazon",
@@ -72,9 +80,11 @@ const Wishlists: React.FC = () => {
         externalWishlistsArray: [
           {
             name: "Peter's Birthday",
+            id: 1,
             giftsArray: [
               {
                 name: "Rug",
+                id: 1,
                 category: "Home deco",
                 price: 50,
                 provider: "Amazon",
@@ -82,6 +92,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "Surf board",
+                id: 2,
                 category: "Sports",
                 price: 300,
                 provider: "AliExpress",
@@ -89,6 +100,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "Xbox X",
+                id: 3,
                 category: "Entertainment",
                 price: 500,
                 provider: "Amazon.co.uk",
@@ -99,9 +111,11 @@ const Wishlists: React.FC = () => {
           },
           {
             name: "Belinda's wedding",
+            id: 2,
             giftsArray: [
               {
                 name: "table",
+                id: 1,
                 category: "Home deco",
                 price: 150,
                 provider: "Amazon.fr",
@@ -109,6 +123,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "Surf board",
+                id: 2,
                 category: "Sports",
                 price: 300,
                 provider: "AliExpress",
@@ -116,6 +131,7 @@ const Wishlists: React.FC = () => {
               },
               {
                 name: "sofa",
+                id: 3,
                 category: "Home deco",
                 price: 1500,
                 provider: "Lovely sofas",
