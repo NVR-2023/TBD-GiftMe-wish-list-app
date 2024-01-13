@@ -4,7 +4,7 @@ import { createContext, useState, useContext } from "react";
 // Wishlists
 
 type gift = {
-  giftId?: number;
+  id?: number;
   name?: string;
   category?: string;
   giftImage?: string;
@@ -23,11 +23,13 @@ type gift = {
 }
 
 type myWishlist = {
+  id?: number;
   name?: string;
   giftsArray?: gift[];
 }
 
 type externalWishlist = {
+  id?: number;
   name?: string;
   giftsArray?: gift[];
   receiver?: string;
@@ -43,11 +45,13 @@ type displayWishlistBy = {
 // Groups
 
 type gifter = {
+  id?: number;
   name?: string;
   avatarImage?: string;
 }
 
 type group = {
+  id?: number;
   name?: string,
   giftersArray?: gifter[];
 }
@@ -55,6 +59,7 @@ type group = {
 //Notifications
 
 type notification = {
+  id?: number;
   message?: string;
   isRead?: boolean;
   sent?: Date;
@@ -65,6 +70,8 @@ type AppContextProps = {
   userId?: number;
   userName?: string;
   userJWT?: string;
+
+  //UI details
   currentPage?: string;
   darkMode?: boolean;
 
