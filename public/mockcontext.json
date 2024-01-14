@@ -1,0 +1,221 @@
+{
+  "userDetails": {
+    "userId": 1,
+    "userName": "JohnDoe",
+    "userJWT": "your-jwt-token",
+    "isLogged": true
+  },
+  "theme": "dark",
+  "wishlistsTabContext": {
+    "myWishlists": [
+      {
+        "id": 1,
+        "name": "My Birthday Wishlist",
+        "giftsArray": [
+          {
+            "id": 101,
+            "name": "Smartphone",
+            "category": "Electronics",
+            "giftImage": "smartphone.jpg",
+            "price": 500
+          },
+          {
+            "id": 102,
+            "name": "Watch",
+            "category": "Fashion",
+            "giftImage": "watch.jpg",
+            "price": 150
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Christmas Wishlist",
+        "giftsArray": [
+          {
+            "id": 201,
+            "name": "Headphones",
+            "category": "Electronics",
+            "giftImage": "headphones.jpg",
+            "price": 100
+          },
+          {
+            "id": 202,
+            "name": "Sweater",
+            "category": "Fashion",
+            "giftImage": "sweater.jpg",
+            "price": 50
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Tech Gadgets Wishlist",
+        "giftsArray": [
+          {
+            "id": 301,
+            "name": "Smartwatch",
+            "category": "Electronics",
+            "giftImage": "smartwatch.jpg",
+            "price": 200
+          },
+          {
+            "id": 302,
+            "name": "Wireless Charger",
+            "category": "Electronics",
+            "giftImage": "wireless-charger.jpg",
+            "price": 30
+          }
+        ]
+      }
+    ],
+    "externalWishlists": [
+      {
+        "id": 4,
+        "name": "Friend's Wishlist",
+        "giftsArray": [
+          {
+            "id": 401,
+            "name": "Book Set",
+            "category": "Books",
+            "giftImage": "books.jpg",
+            "price": 80
+          }
+        ],
+        "receiver": "Friend"
+      },
+      {
+        "id": 5,
+        "name": "Colleague's Wishlist",
+        "giftsArray": [
+          {
+            "id": 501,
+            "name": "Desk Organizer",
+            "category": "Office Supplies",
+            "giftImage": "desk-organizer.jpg",
+            "price": 25
+          },
+          {
+            "id": 502,
+            "name": "Coffee Mug",
+            "category": "Home",
+            "giftImage": "coffee-mug.jpg",
+            "price": 15
+          }
+        ],
+        "receiver": "Colleague"
+      },
+      {
+        "id": 6,
+        "name": "Family Member's Wishlist",
+        "giftsArray": [
+          {
+            "id": 601,
+            "name": "Cookbook",
+            "category": "Books",
+            "giftImage": "cookbook.jpg",
+            "price": 40
+          }
+        ],
+        "receiver": "Family Member"
+      }
+    ],
+    "display": {
+      "sortWishlistsBy": "date",
+      "currentWishlistType": "myWishlists",
+      "currentWishlistIndex": 0,
+      "status": "active",
+      "price": "asc",
+      "category": "Electronics",
+      "searchBy": "Smartphone"
+    }
+  },
+  "grouspTabContext": {
+    "groups": {
+      "groupsArray": [
+        {
+          "id": 1,
+          "name": "Family Group",
+          "giftersArray": [
+            {
+              "id": 11,
+              "name": "Dad",
+              "avatarImage": "dad.jpg"
+            },
+            {
+              "id": 12,
+              "name": "Mom",
+              "avatarImage": "mom.jpg"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Work Group",
+          "giftersArray": [
+            {
+              "id": 21,
+              "name": "Manager",
+              "avatarImage": "manager.jpg"
+            },
+            {
+              "id": 22,
+              "name": "Colleague",
+              "avatarImage": "colleague.jpg"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Friends Group",
+          "giftersArray": [
+            {
+              "id": 31,
+              "name": "Best Friend",
+              "avatarImage": "best-friend.jpg"
+            },
+            {
+              "id": 32,
+              "name": "Roommate",
+              "avatarImage": "roommate.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    "sort": {
+      "sortGroupsBy": "name",
+      "sortGiftersBy": "name"
+    }
+  },
+  "notificationsContext": {
+    "notifications": {
+      "notificationsArray": [
+        {
+          "id": 1,
+          "message": "New message received",
+          "isRead": false,
+          "sent": "2023-01-15T10:30:00Z"
+        },
+        {
+          "id": 2,
+          "message": "Reminder: Upcoming event",
+          "isRead": true,
+          "sent": "2023-01-16T14:45:00Z"
+        },
+        {
+          "id": 3,
+          "message": "Notification test",
+          "isRead": false,
+          "sent": "2023-01-17T12:00:00Z"
+        }
+      ]
+    },
+    "sort": "date"
+  },
+  "globalVariables": {
+    "variable1": "value1",
+    "variable2": 42
+  }
+}
+

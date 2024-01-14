@@ -1,11 +1,23 @@
 "use client";
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useEffect, useContext } from "react";
+
+// General User
+
+type userType = {
+  userId: number;
+  userName: string;
+  userJWT?: string;
+  isLogged?: boolean;
+};
+
+// UI Theme
+type themeType = "dark" | "light";
 
 // Wishlists
 
-type gift = {
-  id?: number;
-  name?: string;
+type giftType = {
+  id: number;
+  name: string;
   category?: string;
   giftImage?: string;
   provider?: string;
@@ -20,99 +32,131 @@ type gift = {
   maxDeliveryDate?: Date;
   registerDate?: Date;
   giftedByUser?: string;
-}
+};
 
-type myWishlist = {
-  id?: number;
-  name?: string;
-  giftsArray?: gift[];
-}
+type myWishlistType = {
+  id: number;
+  name: string;
+  giftsArray?: giftType[];
+};
 
-type externalWishlist = {
-  id?: number;
-  name?: string;
-  giftsArray?: gift[];
+type myWishlistsArrayType = myWishlistType[];
+
+type externalWishlistType = {
+  id: number;
+  name: string;
+  giftsArray?: giftType[];
   receiver?: string;
 };
 
-type displayWishlistBy = {
+type externalWishlistsArrayType = externalWishlistType[];
+
+type displayWishlistByType = {
+  sortWishlistsBy?: string;
+  currentWishlistType?: "myWishlists" | "externalWishlists";
+  currentWishlistIndex?: number;
   status?: string;
   price?: string;
   category?: string;
   searchBy?: string;
-}
+};
 
 // Groups
 
-type gifter = {
-  id?: number;
-  name?: string;
+type gifterType = {
+  id: number;
+  name: string;
   avatarImage?: string;
-}
+};
 
-type group = {
-  id?: number;
-  name?: string,
-  giftersArray?: gifter[];
-}
+type groupType = {
+  id: number;
+  name: string;
+  giftersArray?: gifterType[];
+};
+
+type groupsArrayType = {
+  groupsArray?: groupType[];
+};
+
+type sortGroupsGiftersByType = {
+  sortGroupsBy?: string;
+  sortGiftersBy?: string;
+};
 
 //Notifications
 
-type notification = {
-  id?: number;
-  message?: string;
+type notificationType = {
+  id: number;
+  message: string;
   isRead?: boolean;
   sent?: Date;
-}
+};
+
+type notificationsArrayType = {
+  notificationsArray?: notificationType[];
+};
+
+type sortNotificationsByType = string;
+
+// Global Variables and functions
+
+type globalVariablesType = Record<any, any>;
+
+type globalFunctionsType = Record<any, Function>;
 
 type AppContextProps = {
-  //General user details
-  userId?: number;
-  userName?: string;
-  userJWT?: string;
+  userDetails?: userType;
+  theme?: themeType;
 
-  //UI details
-  currentPage?: string;
-  darkMode?: boolean;
+  wishlistsTabContext?: {
+    myWishlists?: myWishlistsArrayType;
+    externalWishlists?: externalWishlistsArrayType;
+    display?: displayWishlistByType;
+  };
 
-  //Wishlists tab
-  sortWishlistsBy?: string;
-  myWishlistsArray?: myWishlist[];
-  externalWishlistsArray?: externalWishlist[];
-  currentWishlistType?: "myWishlists" | "externalWishlists";
-  currentWishlistIndex?: number;
+  grouspTabContext?: {
+    groups: groupsArrayType;
+    sort: sortGroupsGiftersByType;
+  };
 
-  displayWishlistBy?: displayWishlistBy;
+  notificationsContext?: {
+    notifications: notificationsArrayType;
+    sort: sortNotificationsByType;
+  };
 
-  //Groups tab
-  sortGroupsBy?: string;
-  groupsArray?: group[];
-  sortGiftersBy?: string
-  giftersArray?: gifter[];
-  searchGroupBy?: string;
-
-  //Notifications tab
-  sortNotificationsBy?: string;
-  searchNotificationsBy?: string;
-  notificationsArray?: notification[];
-
+  globalVariables?: globalVariablesType;
+  globalFunctions?: globalFunctionsType;
 };
 
-
-const defaultAppContext: AppContextProps = {
-  userId: 333,
-  userName: "John",
-  userJWT: "- Default Token -",
-  currentPage: "wishlists",
-  darkMode: false,
-};
+const defaultAppContext: AppContextProps = {};
 
 // revision: argument needs to be typed
 const AppContext = createContext<any>(undefined);
 
 export function AppWrapper({ children }: { children: React.ReactNode }) {
-  const [userDetails, setUserDetails] = useState(defaultAppContext);
-  return <AppContext.Provider value={{userDetails , setUserDetails}}>{children}</AppContext.Provider>;
+  const [globalContext, setGlobalContext] = useState(defaultAppContext);
+
+  useEffect(() => {
+    const loadMockContext = async () => {
+      try {
+        const response = await fetch("mockcontext.json");
+        const data = await response.json();
+        setGlobalContext(data);
+        console.log("mock context successfully loaded");
+      } catch (error) {
+        console.error("Error loading mock context:", error);
+      }
+    };
+    loadMockContext();
+  }, []);
+
+  return (
+    <AppContext.Provider
+      value={{ globalContext: globalContext, setGlobalContext: setGlobalContext }}>
+      {children}
+    </AppContext.Provider>
+  );
 }
 
 export function useAppContext() {

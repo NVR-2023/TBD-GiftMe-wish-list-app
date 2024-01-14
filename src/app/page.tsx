@@ -1,4 +1,6 @@
+"use client"
 import GiftMeLogo from "./_components/Common/GiftMeLogo";
+import TestButton from "./_components/Common/TestButton";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,9 +12,7 @@ export default function Home() {
       </div>
       <div>
         <div className="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            Daisy UI connected
-          </figure>
+          <figure>Daisy UI connected</figure>
           <div className="card-body">
             <h2 className="card-title">
               Card component without image
@@ -26,6 +26,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <TestButton text={"Home page"} onClick={() => {alert("Home Page")}} />
       <div className="z-10 max-w-5xl w-full flex items-center justify-evenly font-mono text-sm lg:w-auto">
         <Link className="text-green-400 pe-9" href="/wishlists">
           Wishlists
