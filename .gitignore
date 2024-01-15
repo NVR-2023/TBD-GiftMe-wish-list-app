@@ -26,8 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-# ***** Commented out so Git pushes it to remote repository *****
-#.env*.local
+.env*.local
 
 # vercel
 .vercel
