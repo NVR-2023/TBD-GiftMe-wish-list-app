@@ -31,7 +31,7 @@ export default function Wishlists() {
         <span className="me-3">{globalContext?.userDetails?.userId}</span>
         <span className="me-3">{globalContext?.userDetails?.userJWT}</span>
         <span className="me-3">{globalContext?.globalVariables?.variable1}</span>
-        <span className="me-3">{globalContext?.globalVariables?.variable9}</span>
+        <span className="me-3">{globalContext?.theme}</span>
       </div>
       <div>
         <TestButton
