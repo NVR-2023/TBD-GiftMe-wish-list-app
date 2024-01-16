@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "@/context";
-import TestButton from "../_components/Common/TestButton";
+import TestButton from "../../_components/Common/TestButton";
 
 export default function Wishlists() {
   const { globalContext, setGlobalContext } = useAppContext();
@@ -34,7 +34,13 @@ export default function Wishlists() {
         <span className="me-3">{globalContext?.globalVariables?.variable9}</span>
       </div>
       <div>
-        <TestButton text={"Wishlists"} onClick={() => { alert("Wishlists"); console.log("Wishlists")}}/>
+        <TestButton
+          text={"Wishlists"}
+          onClick={() => {
+            alert("Wishlists");
+            console.log("Wishlists");
+          }}
+        />
       </div>
     </main>
   );
