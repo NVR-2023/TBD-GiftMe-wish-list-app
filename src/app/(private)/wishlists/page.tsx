@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "@/context";
-import TestButton from "../../_components/Common/TestButton";
+import TestButton from "../../../components/common/TestButton";
 
 export default function Wishlists() {
   const { globalContext, setGlobalContext } = useAppContext();
@@ -19,6 +19,10 @@ export default function Wishlists() {
     }
   };
 
+const changeTheme = (): void =>
+  setGlobalContext((current: any) => ({ ...current, theme: "light" }));
+
+
   changeGlobalContext("abcdef");
   addGlobalContext("Variable 9");
 
@@ -33,6 +37,7 @@ export default function Wishlists() {
         <span className="me-3">{globalContext?.globalVariables?.variable1}</span>
         <span className="me-3">{globalContext?.theme}</span>
       </div>
+      <button onClick={changeTheme} className="btn-success">(Click me)</button>
       <div>
         <TestButton
           text={"Wishlists"}

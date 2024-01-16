@@ -5,7 +5,7 @@ import HamburgerIcon from "./hamburgerIcon";
 
 
 
-export default function NavBar() {
+export default function OldNavBar() {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
         <nav className="fixed w-full z-10 items-center px-2 py-3 bg-gray-900 mb-3">

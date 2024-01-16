@@ -126,4 +126,8 @@ export type AppContextPropsType = {
 
   globalVariables?: globalVariablesType;
   globalFunctions?: globalFunctionsType;
+
+  // Necessary , otherwise will throw an error in context/index.ysx
+  globalContext?: any;
+  setGlobalContext?: any;
 };
