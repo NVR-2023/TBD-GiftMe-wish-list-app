@@ -3,7 +3,7 @@
     "userId": 1,
     "userName": "JohnDoe",
     "userJWT": "your-jwt-token",
-    "userAvatar": "",
+    "userAvatar": "/public/images/avatars/avatar01.jpg",
 
     "isLogged": true
   },
