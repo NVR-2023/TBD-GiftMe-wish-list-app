@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useAppContext } from "@/context";
-import TestButton from "../../_components/Common/TestButton";
+import TestButton from "../../../components/common/TestButton";
 
 export default function Wishlists() {
   const { globalContext, setGlobalContext } = useAppContext();

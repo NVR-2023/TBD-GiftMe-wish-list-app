@@ -5,7 +5,7 @@ import { AppContextPropsType } from "@/types/global_context_type";
 const defaultAppContext: AppContextPropsType = {};
 
 // revision: argument needs to be typed
-const AppContext = createContext<AppContextPropsType>(undefined);
+const AppContext = createContext<AppContextPropsType>(defaultAppContext);
 
 export function AppWrapper({ children }: { children: React.ReactNode }) {
   const [globalContext, setGlobalContext] = useState(defaultAppContext);

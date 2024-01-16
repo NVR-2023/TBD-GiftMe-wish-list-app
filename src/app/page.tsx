@@ -1,6 +1,6 @@
 "use client";
-import GiftMeLogo from "./_components/Common/GiftMeLogo";
-import TestButton from "./_components/Common/TestButton";
+import GiftMeLogo from "../components/common/GiftMeLogo";
+import TestButton from "../components/common/TestButton";
 import Link from "next/link";
 
 export default function Home() {
