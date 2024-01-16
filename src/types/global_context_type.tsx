@@ -4,6 +4,7 @@ type userType = {
   userId: number;
   userName: string;
   userJWT?: string;
+  userAvatar?: string;
   isLogged?: boolean;
 };
 

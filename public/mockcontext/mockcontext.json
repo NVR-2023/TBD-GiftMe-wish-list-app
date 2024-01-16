@@ -3,6 +3,8 @@
     "userId": 1,
     "userName": "JohnDoe",
     "userJWT": "your-jwt-token",
+    "userAvatar": "",
+
     "isLogged": true
   },
   "theme": "dark",
@@ -218,4 +220,3 @@
     "variable2": 42
   }
 }
-
